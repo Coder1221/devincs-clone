@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        {/* <section className={styles.valueProps}>
+        <section className={styles.valueProps}>
           <h2>Why Devincs?</h2>
           <div className={styles.cards}>
             <div className={styles.card}>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-        </section>assasassdasaa */}
+        </section>
 
         <section className={styles.devincsDifference}>
           <div className={styles.splitScreen}>
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <ValueProps />
+        {/* <ValueProps /> */}
         <section className={styles.techStack}>
           <h2>Technology Stack</h2>
           <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
