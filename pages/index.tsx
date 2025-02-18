@@ -112,6 +112,41 @@ const Home: NextPage = () => {
           </div>
         </section>
 
+        <section className={styles.techStack}>
+          <h2>Technology Stack</h2>
+          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
+          <div className={styles.techGrid}>
+            <div className={styles.techLogo}>
+              <img src="/aws.png" alt="AWS" />
+              <span>AWS</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/kubernetes.png" alt="Kubernetes" />
+              <span>Kubernetes</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/tensorflow.png" alt="TensorFlow" />
+              <span>TensorFlow</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/ros.png" alt="ROS" />
+              <span>ROS</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/arm.png" alt="ARM Cortex" />
+              <span>ARM Cortex</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/raspberry-pi.png" alt="Raspberry Pi" />
+              <span>Raspberry Pi</span>
+            </div>
+            <div className={styles.techLogo}>
+              <img src="/nvidia.png" alt="NVIDIA Jetson" />
+              <span>NVIDIA Jetson</span>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2>Ready to Transform Your Industry?</h2>
