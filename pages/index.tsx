@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Scene3D from "../components/Scene3D";
 
 const Home: NextPage = () => {
   return (
