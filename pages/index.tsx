@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import ValueProps from "@/components/ValueProps";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
@@ -121,6 +122,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
+        <ValueProps />
         <section className={styles.techStack}>
           <h2>Technology Stack</h2>
           <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
