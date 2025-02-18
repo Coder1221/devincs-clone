@@ -1,14 +1,36 @@
-
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
+import {
+  SiAmazon,
+  SiKubernetes,
+  SiTensorflow,
+  SiRos,
+  SiArm,
+  SiRaspberrypi,
+  SiNvidia,
+} from "react-icons/si";
+
+const technologies = [
+  { icon: SiAmazon, name: "AWS" },
+  { icon: SiKubernetes, name: "Kubernetes" },
+  { icon: SiTensorflow, name: "TensorFlow" },
+  { icon: SiRos, name: "ROS" },
+  { icon: SiArm, name: "ARM Cortex" },
+  { icon: SiRaspberrypi, name: "Raspberry Pi" },
+  { icon: SiNvidia, name: "NVIDIA Jetson" },
+];
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Devincs - Architects of the Connected Future</title>
-        <meta name="description" content="Engineering Intelligence into Every Layer of Tomorrow" />
+        <meta
+          name="description"
+          content="Engineering Intelligence into Every Layer of Tomorrow"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -29,11 +51,21 @@ const Home: NextPage = () => {
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1>From Silicon to Software: Engineering the Future, One Byte at a Time</h1>
-            <p>Devincs delivers end-to-end solutions for enterprises bridging the digital and physical worlds</p>
+            <h1>
+              From Silicon to Software: Engineering the Future, One Byte at a
+              Time
+            </h1>
+            <p>
+              Devincs delivers end-to-end solutions for enterprises bridging the
+              digital and physical worlds
+            </p>
             <div className={styles.ctaButtons}>
-              <button className={styles.primaryBtn}>Build Your Connected Solution</button>
-              <button className={styles.secondaryBtn}>Explore Our Impact Stories →</button>
+              <button className={styles.primaryBtn}>
+                Build Your Connected Solution
+              </button>
+              <button className={styles.secondaryBtn}>
+                Explore Our Impact Stories →
+              </button>
             </div>
           </div>
         </section>
@@ -47,11 +79,17 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.card}>
               <h3>Security Embedded by Design</h3>
-              <p>Hardened systems with zero-trust architecture for mission-critical applications.</p>
+              <p>
+                Hardened systems with zero-trust architecture for
+                mission-critical applications.
+              </p>
             </div>
             <div className={styles.card}>
               <h3>Scale with Precision</h3>
-              <p>Deploy IoT solutions that grow with your business, not against it.</p>
+              <p>
+                Deploy IoT solutions that grow with your business, not against
+                it.
+              </p>
             </div>
           </div>
         </section>
@@ -60,7 +98,10 @@ const Home: NextPage = () => {
           <div className={styles.splitScreen}>
             <div className={styles.leftPanel}>
               <h2>The Devincs Difference</h2>
-              <h3>Where Hardware Meets Hard Code: Synchronized teams for unified outcomes</h3>
+              <h3>
+                Where Hardware Meets Hard Code: Synchronized teams for unified
+                outcomes
+              </h3>
             </div>
             <div className={styles.rightPanel}></div>
           </div>
@@ -71,7 +112,10 @@ const Home: NextPage = () => {
           <div className={styles.carousel}>
             <div className={styles.caseStudyCard}>
               <h3>Project Titan</h3>
-              <p>Revolutionizing Fleet Management with AI-Driven Embedded Telematics</p>
+              <p>
+                Revolutionizing Fleet Management with AI-Driven Embedded
+                Telematics
+              </p>
               <div className={styles.metric}>30% fuel efficiency gains</div>
             </div>
             <div className={styles.caseStudyCard}>
@@ -87,62 +131,32 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className={styles.techStack}>
-          <h2>Technology Stack Showcase</h2>
-          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
-          <div className={styles.techGrid}>
-            <div className={styles.techCategory}>
-              <h3>Software</h3>
-              <div className={styles.techLogos}>
-                <span>AWS</span>
-                <span>Kubernetes</span>
-                <span>TensorFlow</span>
-                <span>ROS</span>
-              </div>
-            </div>
-            <div className={styles.techCategory}>
-              <h3>Hardware</h3>
-              <div className={styles.techLogos}>
-                <span>ARM Cortex</span>
-                <span>Raspberry Pi</span>
-                <span>LoRaWAN</span>
-                <span>NVIDIA Jetson</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section className="py-12 sm:py-20 bg-[#0A1A2F]/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-center font-['Space_Grotesk']">
+              Technology Stack
+            </h2>
+            <p className="text-lg sm:text-xl text-center mb-8 sm:mb-12 text-[#00FF9D] font-['Inter']">
+              Tool Agnostic, Outcome Obsessed
+            </p>
 
-        <section className={styles.techStack}>
-          <h2>Technology Stack</h2>
-          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
-          <div className={styles.techGrid}>
-            <div className={styles.techLogo}>
-              <img src="/aws.png" alt="AWS" />
-              <span>AWS</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/kubernetes.png" alt="Kubernetes" />
-              <span>Kubernetes</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/tensorflow.png" alt="TensorFlow" />
-              <span>TensorFlow</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/ros.png" alt="ROS" />
-              <span>ROS</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/arm.png" alt="ARM Cortex" />
-              <span>ARM Cortex</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/raspberry-pi.png" alt="Raspberry Pi" />
-              <span>Raspberry Pi</span>
-            </div>
-            <div className={styles.techLogo}>
-              <img src="/nvidia.png" alt="NVIDIA Jetson" />
-              <span>NVIDIA Jetson</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
+              {technologies.map((tech, index) => (
+                <motion.div
+                  key={tech.name}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.1 }}
+
+                  viewport={{ once: true }}
+                  className="flex flex-col items-center"
+                >
+                  <tech.icon className="w-12 h-12 sm:w-16 sm:h-16 text-[#2A7FFF] mb-2" />
+                  <span className="text-sm sm:text-base text-gray-300 font-['Inter'] text-center">
+                    {tech.name}
+                  </span>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
@@ -152,8 +166,16 @@ const Home: NextPage = () => {
             <h2>Ready to Transform Your Industry?</h2>
             <p>Let's Engineer Tomorrow—Today</p>
             <form className={styles.contactForm}>
-              <input type="text" placeholder="Your Name" className={styles.formInput} />
-              <input type="email" placeholder="Email Address" className={styles.formInput} />
+              <input
+                type="text"
+                placeholder="Your Name"
+                className={styles.formInput}
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className={styles.formInput}
+              />
               <select className={styles.formInput}>
                 <option value="">I need help with...</option>
                 <option value="iot">IoT Solutions</option>
@@ -161,8 +183,13 @@ const Home: NextPage = () => {
                 <option value="ai">AI Integration</option>
                 <option value="security">Security Solutions</option>
               </select>
-              <textarea placeholder="Tell us about your project" className={styles.formTextarea}></textarea>
-              <button type="submit" className={styles.primaryBtn}>Book a Technical Deep Dive →</button>
+              <textarea
+                placeholder="Tell us about your project"
+                className={styles.formTextarea}
+              ></textarea>
+              <button type="submit" className={styles.primaryBtn}>
+                Book a Technical Deep Dive →
+              </button>
             </form>
           </div>
         </section>
