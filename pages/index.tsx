@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
 import {
   SiAmazon,
   SiKubernetes,
@@ -123,28 +124,63 @@ const Home: NextPage = () => {
         <section className={styles.techStack}>
           <h2>Technology Stack</h2>
           <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
-          <div className={styles.techGrid}>
-            <div className={styles.techLogo}>
+          <motion.div 
+            className={styles.techGrid}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <motion.div 
+              className={styles.techLogo}
+              whileHover={{ scale: 1.1 }}
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 }}
+            >
               <SiAmazon size={48} />
               <span>AWS</span>
-            </div>
-            <div className={styles.techLogo}>
+            </motion.div>
+            <motion.div 
+              className={styles.techLogo}
+              whileHover={{ scale: 1.1 }}
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
               <SiKubernetes size={48} />
               <span>Kubernetes</span>
-            </div>
-            <div className={styles.techLogo}>
+            </motion.div>
+            <motion.div 
+              className={styles.techLogo}
+              whileHover={{ scale: 1.1 }}
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
               <SiTensorflow size={48} />
               <span>TensorFlow</span>
-            </div>
-            <div className={styles.techLogo}>
+            </motion.div>
+            <motion.div 
+              className={styles.techLogo}
+              whileHover={{ scale: 1.1 }}
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
               <SiDocker size={48} />
               <span>Docker</span>
-            </div>
-            <div className={styles.techLogo}>
+            </motion.div>
+            <motion.div 
+              className={styles.techLogo}
+              whileHover={{ scale: 1.1 }}
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
               <SiRaspberrypi size={48} />
               <span>Raspberry Pi</span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </section>
 
         <section className={styles.ctaSection}>
