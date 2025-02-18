@@ -35,6 +35,9 @@ const Home: NextPage = () => {
               <button className={styles.primaryBtn}>Build Your Connected Solution</button>
               <button className={styles.secondaryBtn}>Explore Our Impact Stories →</button>
             </div>
+            <div className={styles.scene3D}>
+              <Scene3D />
+            </div>
           </div>
         </section>
 
