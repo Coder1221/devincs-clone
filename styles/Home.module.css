@@ -139,3 +139,147 @@
 .card p {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.devincsDifference {
+  padding: 6rem 2rem;
+  background: var(--navy);
+}
+
+.splitScreen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftPanel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.leftPanel h3 {
+  color: var(--neon-green);
+  font-size: 1.5rem;
+}
+
+.rightPanel {
+  background: rgba(42, 127, 255, 0.1);
+  border-radius: 8px;
+  min-height: 400px;
+}
+
+.caseStudies {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--electric-blue) 100%);
+}
+
+.caseStudies h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caseStudyCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.caseStudyCard:hover {
+  transform: translateY(-5px);
+}
+
+.caseStudyCard h3 {
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+}
+
+.metric {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: rgba(0, 255, 157, 0.1);
+  border-radius: 4px;
+  color: var(--neon-green);
+  display: inline-block;
+}
+
+.techStack {
+  padding: 6rem 2rem;
+  background: var(--navy);
+}
+
+.techStack h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.techTagline {
+  text-align: center;
+  color: var(--neon-green);
+  margin-bottom: 3rem;
+}
+
+.techGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.techCategory h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.techLogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.techLogos span {
+  background: rgba(42, 127, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ctaSection {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--electric-blue) 100%);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.ctaContent p {
+  color: var(--neon-green);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}

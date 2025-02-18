@@ -55,6 +55,70 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
+        <section className={styles.devincsDifference}>
+          <div className={styles.splitScreen}>
+            <div className={styles.leftPanel}>
+              <h2>The Devincs Difference</h2>
+              <h3>Where Hardware Meets Hard Code: Synchronized teams for unified outcomes</h3>
+            </div>
+            <div className={styles.rightPanel}></div>
+          </div>
+        </section>
+
+        <section className={styles.caseStudies}>
+          <h2>Impact Stories</h2>
+          <div className={styles.carousel}>
+            <div className={styles.caseStudyCard}>
+              <h3>Project Titan</h3>
+              <p>Revolutionizing Fleet Management with AI-Driven Embedded Telematics</p>
+              <div className={styles.metric}>30% fuel efficiency gains</div>
+            </div>
+            <div className={styles.caseStudyCard}>
+              <h3>Project Helix</h3>
+              <p>Secure Edge-to-Cloud Platform for Pharmaceutical IoT</p>
+              <div className={styles.metric}>FDA-compliant data pipelines</div>
+            </div>
+            <div className={styles.caseStudyCard}>
+              <h3>Project Nova</h3>
+              <p>ML-Powered Predictive Maintenance for Wind Turbines</p>
+              <div className={styles.metric}>20% downtime reduction</div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.techStack}>
+          <h2>Technology Stack Showcase</h2>
+          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
+          <div className={styles.techGrid}>
+            <div className={styles.techCategory}>
+              <h3>Software</h3>
+              <div className={styles.techLogos}>
+                <span>AWS</span>
+                <span>Kubernetes</span>
+                <span>TensorFlow</span>
+                <span>ROS</span>
+              </div>
+            </div>
+            <div className={styles.techCategory}>
+              <h3>Hardware</h3>
+              <div className={styles.techLogos}>
+                <span>ARM Cortex</span>
+                <span>Raspberry Pi</span>
+                <span>LoRaWAN</span>
+                <span>NVIDIA Jetson</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.ctaSection}>
+          <div className={styles.ctaContent}>
+            <h2>Ready to Transform Your Industry?</h2>
+            <p>Let's Engineer Tomorrow—Today</p>
+            <button className={styles.primaryBtn}>Book a Technical Deep Dive ⟶</button>
+          </div>
+        </section>
       </main>
     </div>
   );
