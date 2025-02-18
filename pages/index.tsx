@@ -116,9 +116,51 @@ const Home: NextPage = () => {
           <div className={styles.ctaContent}>
             <h2>Ready to Transform Your Industry?</h2>
             <p>Let's Engineer Tomorrow—Today</p>
-            <button className={styles.primaryBtn}>Book a Technical Deep Dive ⟶</button>
+            <form className={styles.contactForm}>
+              <input type="text" placeholder="Your Name" className={styles.formInput} />
+              <input type="email" placeholder="Email Address" className={styles.formInput} />
+              <select className={styles.formInput}>
+                <option value="">I need help with...</option>
+                <option value="iot">IoT Solutions</option>
+                <option value="cloud">Cloud Architecture</option>
+                <option value="ai">AI Integration</option>
+                <option value="security">Security Solutions</option>
+              </select>
+              <textarea placeholder="Tell us about your project" className={styles.formTextarea}></textarea>
+              <button type="submit" className={styles.primaryBtn}>Book a Technical Deep Dive →</button>
+            </form>
           </div>
         </section>
+
+        <footer className={styles.footer}>
+          <div className={styles.footerContent}>
+            <div className={styles.footerSection}>
+              <h3>Devincs</h3>
+              <p>Engineering Intelligence into Every Layer of Tomorrow</p>
+            </div>
+            <div className={styles.footerSection}>
+              <h4>Quick Links</h4>
+              <a href="#services">Services</a>
+              <a href="#case-studies">Case Studies</a>
+              <a href="#about">About Us</a>
+            </div>
+            <div className={styles.footerSection}>
+              <h4>Lab Notes</h4>
+              <a href="#latest">Latest IoT Trends</a>
+              <a href="#edge">Edge Computing</a>
+            </div>
+            <div className={styles.footerSection}>
+              <h4>Certifications</h4>
+              <div className={styles.certLogos}>
+                <span>AWS</span>
+                <span>ARM</span>
+              </div>
+            </div>
+          </div>
+          <div className={styles.footerBottom}>
+            <p>© 2023 Devincs. All rights reserved.</p>
+          </div>
+        </footer>
       </main>
     </div>
   );
