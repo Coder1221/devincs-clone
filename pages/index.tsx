@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { SiAmazon, SiKubernetes, SiTensorflow, SiDocker } from "react-icons/si";
+import { SiAmazonaws, SiKubernetes, SiTensorflow, SiRaspberrypi, SiArm, SiNvidia } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
@@ -116,23 +116,29 @@ const Home: NextPage = () => {
           <h2>Technology Stack Showcase</h2>
           <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
           <div className={styles.techGrid}>
-            <div className={styles.techCategory}>
-              <h3>Software</h3>
-              <div className={styles.techLogos}>
-                <span>AWS</span>
-                <span>Kubernetes</span>
-                <span>TensorFlow</span>
-                <span>ROS</span>
-              </div>
+            <div className={styles.techLogo}>
+              <SiAmazonaws size={48} />
+              <span>AWS</span>
             </div>
-            <div className={styles.techCategory}>
-              <h3>Hardware</h3>
-              <div className={styles.techLogos}>
-                <span>ARM Cortex</span>
-                <span>Raspberry Pi</span>
-                <span>LoRaWAN</span>
-                <span>NVIDIA Jetson</span>
-              </div>
+            <div className={styles.techLogo}>
+              <SiKubernetes size={48} />
+              <span>Kubernetes</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiTensorflow size={48} />
+              <span>TensorFlow</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiRaspberrypi size={48} />
+              <span>Raspberry Pi</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiArm size={48} />
+              <span>ARM Cortex</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiNvidia size={48} />
+              <span>NVIDIA Jetson</span>
             </div>
           </div>
         </section>
