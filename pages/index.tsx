@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import BackgroundAnimation from "../components/BackgroundAnimation";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
 
       <main>
         <section className={styles.hero}>
+          <BackgroundAnimation />
           <div className={styles.heroContent}>
             <h1>From Silicon to Software: Engineering the Future, One Byte at a Time</h1>
             <p>Devincs delivers end-to-end solutions for enterprises bridging the digital and physical worlds</p>
