@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import ValueProps from "@/components/ValueProps";
+import ValueProps from "../components/ValueProps";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className={styles.valueProps}>
+        {/* <section className={styles.valueProps}>
           <h2>Why Devincs?</h2>
           <div className={styles.cards}>
             <div className={styles.card}>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section>assasassdasaa */}
 
         <section className={styles.devincsDifference}>
           <div className={styles.splitScreen}>
@@ -126,13 +126,13 @@ const Home: NextPage = () => {
         <section className={styles.techStack}>
           <h2>Technology Stack</h2>
           <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
-          <motion.div 
+          <motion.div
             className={styles.techGrid}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <motion.div 
+            <motion.div
               className={styles.techLogo}
               whileHover={{ scale: 1.1 }}
               initial={{ y: 20, opacity: 0 }}
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
               <SiAmazon size={48} />
               <span>AWS</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className={styles.techLogo}
               whileHover={{ scale: 1.1 }}
               initial={{ y: 20, opacity: 0 }}
@@ -152,7 +152,7 @@ const Home: NextPage = () => {
               <SiKubernetes size={48} />
               <span>Kubernetes</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className={styles.techLogo}
               whileHover={{ scale: 1.1 }}
               initial={{ y: 20, opacity: 0 }}
@@ -162,7 +162,7 @@ const Home: NextPage = () => {
               <SiTensorflow size={48} />
               <span>TensorFlow</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className={styles.techLogo}
               whileHover={{ scale: 1.1 }}
               initial={{ y: 20, opacity: 0 }}
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
               <SiDocker size={48} />
               <span>Docker</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className={styles.techLogo}
               whileHover={{ scale: 1.1 }}
               initial={{ y: 20, opacity: 0 }}

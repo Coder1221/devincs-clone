@@ -1,24 +1,25 @@
-
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./ui/card";
 import { CircuitBoard, Shield, Globe } from "lucide-react";
 
 const valueProps = [
   {
     title: "Full-Stack Mastery",
     description: "From PCB design to cloud APIs—we own the stack.",
-    icon: CircuitBoard
+    icon: CircuitBoard,
   },
   {
     title: "Security Embedded by Design",
-    description: "Hardened systems with zero-trust architecture for mission-critical applications.",
-    icon: Shield
+    description:
+      "Hardened systems with zero-trust architecture for mission-critical applications.",
+    icon: Shield,
   },
   {
     title: "Scale with Precision",
-    description: "Deploy IoT solutions that grow with your business, not against it.",
-    icon: Globe
-  }
+    description:
+      "Deploy IoT solutions that grow with your business, not against it.",
+    icon: Globe,
+  },
 ];
 
 export default function ValueProps() {
