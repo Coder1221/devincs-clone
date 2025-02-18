@@ -1,26 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { motion } from "framer-motion";
-import {
-  SiAmazon,
-  SiKubernetes,
-  SiTensorflow,
-  SiRos,
-  SiArm,
-  SiRaspberrypi,
-  SiNvidia,
-} from "react-icons/si";
-
-const technologies = [
-  { icon: SiAmazon, name: "AWS" },
-  { icon: SiKubernetes, name: "Kubernetes" },
-  { icon: SiTensorflow, name: "TensorFlow" },
-  { icon: SiRos, name: "ROS" },
-  { icon: SiArm, name: "ARM Cortex" },
-  { icon: SiRaspberrypi, name: "Raspberry Pi" },
-  { icon: SiNvidia, name: "NVIDIA Jetson" },
-];
+import { SiAmazon, SiKubernetes, SiTensorflow, SiDocker } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
@@ -131,32 +112,50 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="py-12 sm:py-20 bg-[#0A1A2F]/50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-center font-['Space_Grotesk']">
-              Technology Stack
-            </h2>
-            <p className="text-lg sm:text-xl text-center mb-8 sm:mb-12 text-[#00FF9D] font-['Inter']">
-              Tool Agnostic, Outcome Obsessed
-            </p>
+        <section className={styles.techStack}>
+          <h2>Technology Stack Showcase</h2>
+          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
+          <div className={styles.techGrid}>
+            <div className={styles.techCategory}>
+              <h3>Software</h3>
+              <div className={styles.techLogos}>
+                <span>AWS</span>
+                <span>Kubernetes</span>
+                <span>TensorFlow</span>
+                <span>ROS</span>
+              </div>
+            </div>
+            <div className={styles.techCategory}>
+              <h3>Hardware</h3>
+              <div className={styles.techLogos}>
+                <span>ARM Cortex</span>
+                <span>Raspberry Pi</span>
+                <span>LoRaWAN</span>
+                <span>NVIDIA Jetson</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
-              {technologies.map((tech, index) => (
-                <motion.div
-                  key={tech.name}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center"
-                >
-                  <tech.icon className="w-12 h-12 sm:w-16 sm:h-16 text-[#2A7FFF] mb-2" />
-                  <span className="text-sm sm:text-base text-gray-300 font-['Inter'] text-center">
-                    {tech.name}
-                  </span>
-                </motion.div>
-              ))}
+        <section className={styles.techStack}>
+          <h2>Technology Stack</h2>
+          <p className={styles.techTagline}>Tool Agnostic, Outcome Obsessed</p>
+          <div className={styles.techGrid}>
+            <div className={styles.techLogo}>
+              <SiAmazon size={48} />
+              <span>AWS</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiKubernetes size={48} />
+              <span>Kubernetes</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiTensorflow size={48} />
+              <span>TensorFlow</span>
+            </div>
+            <div className={styles.techLogo}>
+              <SiDocker size={48} />
+              <span>Docker</span>
             </div>
           </div>
         </section>
@@ -227,5 +226,4 @@ const Home: NextPage = () => {
     </div>
   );
 };
-
 export default Home;
