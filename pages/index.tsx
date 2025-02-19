@@ -199,7 +199,7 @@ const Home: NextPage = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2>Ready to Transform Your Industry?</h2>
-            <p>Let's Engineer Tomorrow—Today</p>
+            <p>Lets Engineer Tomorrow—Today</p>
             <form className={styles.contactForm}>
               <input
                 type="text"
