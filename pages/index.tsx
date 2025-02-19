@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
+import Background3D from "../components/Background3D";
 import {
   SiAmazon,
   SiKubernetes,
@@ -50,6 +51,7 @@ const Home: NextPage = () => {
 
       <main>
         <section className={styles.hero}>
+          <Background3D />
           <div className={styles.heroContent}>
             <h1>
               From Silicon to Software: Engineering the Future, One Byte at a
