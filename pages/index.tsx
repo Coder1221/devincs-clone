@@ -3,6 +3,8 @@ import ValueProps from "../components/ValueProps";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { useState } from "react";
 import {
   SiAmazon,
   SiKubernetes,
@@ -14,6 +16,7 @@ import {
 } from "react-icons/si";
 
 const Home: NextPage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
       <Head>
@@ -28,7 +31,13 @@ const Home: NextPage = () => {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <div className={styles.logo}>Devincs</div>
-          <div className={styles.navLinks}>
+          <button 
+            className={styles.menuButton}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <RiCloseLine size={24} /> : <RiMenu3Line size={24} />}
+          </button>
+          <div className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
             <a href="#services">Services</a>
             <a href="#industries">Industries</a>
             <a href="#case-studies">Case Studies</a>
