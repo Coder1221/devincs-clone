@@ -23,15 +23,48 @@
   color: var(--neon-green);
 }
 
-.navLinks a {
-  color: white;
-  text-decoration: none;
-  margin-left: 2rem;
-  transition: color 0.3s;
+.navLinks {
+  display: none;
 }
 
-.navLinks a:hover {
+@media (min-width: 768px) {
+  .navLinks {
+    display: block;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+  }
+
+  .navLinks a:hover {
+    color: var(--neon-green);
+  }
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--neon-green);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
 }
 
 .hero {
