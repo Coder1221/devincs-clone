@@ -113,20 +113,33 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--navy) 0%, var(--electric-blue) 100%);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .heroContent {
   position: relative;
   z-index: 1;
   text-align: center;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   background: rgba(10, 26, 47, 0.4);
   backdrop-filter: blur(8px);
   border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroContent p {
+    font-size: 1rem;
+  }
 }
 
 .heroContent h1 {
