@@ -6,7 +6,7 @@ import { Globe, Activity, CloudCog, Database, Brain, Network } from "lucide-reac
 const serviceData = [
   {
     icon: Network,
-    title: "Emdedded Development",
+    title: "Emdedded IOT Development",
     description: "We deliver robust, high-performance embedded software solutions to power your devices and systems.",
     features: [
       "Custom Embedded Software Development",
@@ -40,16 +40,16 @@ const serviceData = [
     features: ["Penetration Testing", "Vulnerability Assessments", "OSEP, OSCP certifications", "Cybersecurity Training"],
   },
   {
-    icon: Database,
-    title: "Data Analytics",
-    description: "Transform your raw data into actionable insights with our advanced analytics solutions.",
-    features: ["Big Data Processing", "Predictive Analytics", "Data Visualization", "Custom Dashboards"],
-  },
-  {
     icon: Activity,
     title: "DevOps Services",
     description: "Streamline your development process with our comprehensive DevOps solutions.",
     features: ["CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Logging", "Containerization"],
+  },
+  {
+    icon: Database,
+    title: "Data Analytics",
+    description: "Transform your raw data into actionable insights with our advanced analytics solutions.",
+    features: ["Big Data Processing", "Predictive Analytics", "Data Visualization", "Custom Dashboards"],
   },
 ]
 
