@@ -38,7 +38,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img
-            src="/logo.jpeg"
+            src="/logo1.jpeg"
             alt="Devincs Logo"
             className="h-10 w-auto"
           />

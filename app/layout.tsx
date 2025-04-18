@@ -5,7 +5,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata = {
   title: "Devincs | Web & IoT Solutions",
   description: "Cutting-edge web and IoT services for modern businesses",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/logo1.jpg'
+  }
 }
 
 export default function RootLayout({
