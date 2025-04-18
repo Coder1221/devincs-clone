@@ -1,12 +1,9 @@
 import type React from "react"
 import "./globals.css"
-// import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
-// const inter = Inter({ subsets: ["latin"] })
-// ${inter.className}
 export const metadata = {
-  title: "devincs | Web & IoT Solutions",
+  title: "Devincs | Web & IoT Solutions",
   description: "Cutting-edge web and IoT services for modern businesses",
     generator: 'v0.dev'
 }
@@ -26,6 +23,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'

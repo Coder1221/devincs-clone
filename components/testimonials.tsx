@@ -9,7 +9,7 @@ const testimonials = [
   {
     id: 1,
     content:
-      "devincs transformed our manufacturing process with their IoT integration. Real-time monitoring has increased our efficiency by 35% and significantly reduced downtime. Their team's expertise and support throughout the implementation was exceptional.",
+      "Devincs transformed our manufacturing process with their IoT integration. Real-time monitoring has increased our efficiency by 35% and significantly reduced downtime. Their team's expertise and support throughout the implementation was exceptional.",
     author: "Sarah Johnson",
     position: "CTO",
     company: "GlobalTech Manufacturing",

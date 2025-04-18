@@ -34,11 +34,19 @@ export function Navbar() {
         isScrolled ? "bg-black/80 backdrop-blur-md py-3" : "bg-transparent py-5"
       }`}
     >
+
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold flex items-center gap-0">
-          <span className="text-white">dev</span>
-          <span className="text-primary">incs</span>
-        </Link>
+        <div className="flex items-center gap-2">
+          <img
+            src="/logo.jpeg"
+            alt="Devincs Logo"
+            className="h-10 w-auto"
+          />
+          <Link href="/" className="text-2xl font-bold flex items-center gap-0">
+            <span className="text-white">Dev</span>
+            <span className="text-primary">incs</span>
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:gap-x-8">
@@ -51,7 +59,9 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="glow-effect">Get in Touch</Button>
+          <Button asChild className="glow-effect">
+            <Link href="#contact">Get in Touch</Link>
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -76,7 +86,9 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="mt-2 glow-effect">Get in Touch</Button>
+            <Button asChild className="glow-effect">
+              <Link href="#contact">Get in Touch</Link>
+            </Button>
           </div>
         </div>
       )}

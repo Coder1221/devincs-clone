@@ -216,7 +216,7 @@ export function HeroSection() {
       <div className="container relative z-10 mx-auto px-4 h-full flex flex-col justify-center">
         <div className="max-w-4xl">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6">
-            <span className="text-white">dev</span>
+            <span className="text-white">Dev</span>
             <span className="text-primary orange-glow">incs</span>: Innovating the Future with Smart Web & IoT Solutions
           </h1>
 

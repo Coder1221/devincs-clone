@@ -4,7 +4,7 @@ import { Award, CheckCircle, Users } from "lucide-react"
 const stats = [
   { value: "50+", label: "Completed Projects", icon: CheckCircle },
   { value: "12+", label: "Years Experience", icon: Award },
-  { value: "200+", label: "Happy Clients", icon: Users },
+  { value: "20+", label: "Happy Clients", icon: Users },
 ]
 
 export function AboutUs() {

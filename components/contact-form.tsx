@@ -22,7 +22,7 @@ export function ContactForm() {
     message: "",
   })
 
-  const updateFormData = (field, value) => {
+  const updateFormData = (field: keyof typeof formData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
@@ -34,7 +34,7 @@ export function ContactForm() {
     setStep((prev) => Math.max(prev - 1, 1))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     // In a real application, this would send the form data to a server
     alert("Form submitted! We'll be in touch soon.")
@@ -54,19 +54,25 @@ export function ContactForm() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@devincs.com",
-      link: "mailto:contact@devincs.com",
+      value: "sales@devincs.com",
+      link: "mailto:sales@devincs.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+44 (774) 335-6028",
+      link: "tel:+447743356028",
+    },
+    {
+      icon: Phone,
+      title: "Phone",
+      value: "+92 (321) 969-1947",
+      link: "tel:+923219691947",
     },
     {
       icon: MapPin,
       title: "Office",
-      value: "123 Tech Avenue, Silicon Valley, CA",
+      value: "Rowan Avenue, Washington Tyne and Wear UK",
       link: "#",
     },
   ]
