@@ -5,35 +5,45 @@ import { Globe, Activity, CloudCog, Database, Brain, Network } from "lucide-reac
 
 const serviceData = [
   {
+    icon: Network,
+    title: "Emdedded Development",
+    description: "We deliver robust, high-performance embedded software solutions to power your devices and systems.",
+    features: [
+      "Custom Embedded Software Development",
+      "Firmware Updates",
+      "IoT Embedded Solutions",
+      "IoT Security"
+    ],
+  },
+  {
     icon: Globe,
-    title: "Web Development",
+    title: "Mobile & Web Development",
     description:
       "Custom web applications built with cutting-edge technologies to deliver exceptional user experiences.",
-    features: ["Progressive Web Apps", "Responsive Design", "API Integration", "E-commerce Solutions"],
+    features: ["Progressive Web Apps", "Custom mobile apps", "API Integrations", "Low Code & No code Solutions"],
   },
   {
-    icon: Network,
-    title: "IoT Integration",
-    description: "Connect, monitor, and optimize your devices with our seamless IoT integration services.",
-    features: ["Device Management", "Real-time Monitoring", "Connectivity Solutions", "IoT Security"],
+    icon: Brain,
+    title: "AI/ML Services",
+    description: "Unlock the power of artificial intelligence and machine learning to transform your business.",
+    features: [
+      "Custom AI/ML Solutions",
+      "Natural Language Processing",
+      "AI/ML Integration",
+      "Model Training & Optimization"
+    ],
   },
   {
-    icon: CloudCog,
-    title: "Cloud Solutions",
-    description: "Scalable, reliable cloud infrastructure to power your applications and services.",
-    features: ["Cloud Migration", "Serverless Architecture", "Cloud Security", "Auto-scaling"],
+    icon: Activity,
+    title: "Cybersecurity Services",
+    description: "Protect your business from evolving cyber threats with our comprehensive cybersecurity solutions.",
+    features: ["Penetration Testing", "Vulnerability Assessments", "OSEP, OSCP certifications", "Cybersecurity Training"],
   },
   {
     icon: Database,
     title: "Data Analytics",
     description: "Transform your raw data into actionable insights with our advanced analytics solutions.",
     features: ["Big Data Processing", "Predictive Analytics", "Data Visualization", "Custom Dashboards"],
-  },
-  {
-    icon: Brain,
-    title: "AI & Automation",
-    description: "Leverage artificial intelligence to automate processes and gain competitive advantage.",
-    features: ["Machine Learning", "Process Automation", "AI Integration", "Predictive Maintenance"],
   },
   {
     icon: Activity,

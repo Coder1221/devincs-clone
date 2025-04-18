@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { SendHorizonal, Mail, Phone, MapPin } from "lucide-react"
+import { SendHorizonal, Mail, Phone, MapPin, Twitter, Linkedin, Github, Facebook } from "lucide-react"
 
 export function ContactForm() {
   const [step, setStep] = useState(1)
@@ -115,14 +115,19 @@ export function ContactForm() {
               <div className="mt-12">
                 <h4 className="font-medium text-white mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  {["twitter", "linkedin", "github", "facebook"].map((social) => (
+                  {[
+                    { name: "twitter", icon: Twitter },
+                    { name: "linkedin", icon: Linkedin },
+                    // { name: "github", icon: Github },
+                    { name: "facebook", icon: Facebook }
+                  ].map((social) => (
                     <a
-                      key={social}
+                      key={social.name}
                       href="#"
                       className="w-12 h-12 rounded-full bg-[#222222] hover:bg-primary/80 flex items-center justify-center transition-colors shadow-[0_0_10px_rgba(0,0,0,0.3)]"
                     >
-                      <span className="sr-only">{social}</span>
-                      <div className="w-5 h-5" />
+                      <span className="sr-only">{social.name}</span>
+                      <social.icon className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
                     </a>
                   ))}
                 </div>

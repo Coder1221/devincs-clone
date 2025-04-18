@@ -121,7 +121,6 @@ const projects = [
 
 export function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState(CATEGORY.WEB)
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [filteredProjects, setFilteredProjects] = useState(projects)
 
@@ -225,7 +224,7 @@ export function Portfolio() {
                       </div>
 
                       {/* Client Testimonial */}
-                      <blockquote className="border-l-2 border-primary pl-4 mb-6">
+                      {/* <blockquote className="border-l-2 border-primary pl-4 mb-6">
                         <p className="text-gray-400 italic mb-2">{project.testimonial.quote}</p>
                         <footer className="text-sm">
                           <strong className="text-white">{project.testimonial.author}</strong>
@@ -234,7 +233,7 @@ export function Portfolio() {
                             {project.testimonial.position}, {project.testimonial.company}
                           </span>
                         </footer>
-                      </blockquote>
+                      </blockquote> */}
 
                       {/* Action Links */}
                       <div className="flex flex-wrap gap-3">
